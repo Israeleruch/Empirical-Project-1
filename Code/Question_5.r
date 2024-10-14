@@ -48,6 +48,3 @@ treated_matrix <- as.matrix(nsw[treat == 1, ..covariates])
 control_matrix <- as.matrix(nsw[treat == 0, ..covariates])
 
 hotelling_result <- hotelling.test(treated_matrix, control_matrix)
-
-## Response: Based on the results, the randomization assumption is largely reasonable, as most covariates appear well-balanced between the treated and control groups. 
-## However, there is some evidence of imbalance in the 'nodegree' and 'education' covariates, which may warrant further adjustment in the analysis to account for these differences.

@@ -56,6 +56,3 @@ for (k in 1:num_folds) {
 
 ## Computing the average ATE estimate across all folds
 average_dr_ate_estimator <- mean(ate_estimates)
-
-## Response: By partitioning the data into several folds, cross-fitting reduces the statistical dependence between the nuisance functions (such as propensity scores and outcome models) and the ATE estimator. 
-## If the machine learning models satisfy the product rate condition, the estimator achieves √N-asymptotic normality.

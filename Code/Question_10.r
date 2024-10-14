@@ -27,6 +27,3 @@ att_estimator_w <- att_mean_treated - att_mean_control
 ate_mean_treated <- full_dt_rf_trimmed[treat == 1, mean(re78_weighted_ate)]
 ate_mean_control <- full_dt_rf_trimmed[treat == 0, mean(re78_weighted_ate)]
 ate_estimator_w <- ate_mean_treated - ate_mean_control
-
-## Response: Yes, under the assumption of unconfoundedness, both the ATE and ATT estimators are unbiased. Typically, when ATE > ATT, it suggests that the treatment effect is larger for the broader population than for the treated group alone.
-## In this case, however, the small difference between ATE and ATT indicates that the treatment effect is consistent across both the treated group and the broader population, implying a relatively homogeneous treatment effect.

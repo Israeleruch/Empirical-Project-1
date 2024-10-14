@@ -82,7 +82,3 @@ for (dataset in datasets) {
     )
   )
 }
-
-## Response: Both Probit and Random Forest models perform well, with substantial treatment effects observed (SMD > 1) and highly significant p-values across both ATT and ATE estimators. 
-## The similarity in results is reassuring, suggesting that both methods and estimators effectively capture the treatment effects. 
-## While the Random Forest model offers greater flexibility in capturing non-linear relationships and interactions, the Probit model remains valuable for its simplicity and interpretability.

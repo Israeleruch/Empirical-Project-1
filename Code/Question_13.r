@@ -14,7 +14,3 @@ ate_comparison_table <- data.table(
     average_dr_ate_estimator
   )
 )
-
-## Response: The Doubly Robust (DR) estimator is unbiased if either the propensity score model or the outcome models are correctly specified. 
-## The cross-fitted DR estimator inherits this property while reducing the statistical dependence between the nuisance function, thereby achieving √N-asymptotic normality.
-## Hence, the Cross-Fitted DR Estimator is the preferred estimator.

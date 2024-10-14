@@ -28,8 +28,3 @@ full_dt_rf_trimmed[, dr_ate := (mu1 - mu0) +
   ((1 - treat) * (re78 - mu0) / (1 - propensity_score_rf))]
 
 dr_ate_estimator <- mean(full_dt_rf_trimmed$dr_ate)
-
-## Response: Unlike the IPW estimator, the DR estimator ensures that if either the propensity score model or the outcome models are correctly specified, the estimator remains unbiased. 
-## This flexibility allows for the use of nonparametric methods like Random Forest, as performed here. 
-## To minimize bias, it is important that the machine learning models avoid overfitting, ensuring they generalize well to new data. 
-## Additionally, for the estimator to achieve √N-asymptotic normality, the models must satisfy the product rate condition, which requires both the propensity score and outcome models to converge at appropriate rates.

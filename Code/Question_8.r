@@ -21,6 +21,3 @@ ggplot(plot_data, aes(x = Propensity_Score, color = Method, linetype = factor(tr
   ) +
   theme_minimal() +
   theme(legend.position = "top")
-
-## Response: Based on the plot, the propensity score distributions are very similar across both methods, as the density curves largely overlap. 
-## However, the overlap between the treated and control groups is limited, as the propensity scores concentrated near 0 for the control group. 
